@@ -7,8 +7,10 @@ x_values = []
 
 while beta <= 4:
     xold = 0.5
+
+    # Filters values
     for i in range(1000):
-        xnew = ((xold - math.pow(xold, 2)) * beta) # x + 1 = beta*x*(1-x)
+        xnew = ((xold - math.pow(xold, 2)) * beta) #  x + 1 = beta*x*(1-x)
         xold = xnew
     xss = xnew
     for i in range(10000):
